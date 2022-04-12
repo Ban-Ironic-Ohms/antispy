@@ -2,7 +2,7 @@
 
 :loop
 
-tasklist /fi "ImageName eq ClassroomWindows.exe" /fo csv 2>NUL | find /I "classroomwindows.exe">NUL
+tasklist /fi "ImageName eq Chromium.Goguardian.GGWin" /fo csv 2>NUL | find /I "Chromium.Goguardian.GGWin">NUL
 if "%ERRORLEVEL%"=="0" goto :kill
 timeout 1
 goto :loop
